@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./minCss/style.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="./css/wickedcss.min.css">
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+ 
+</head>
+<body>
+   <div class="wrapper">
+       <div class="app">
+           <div class="app__blocks swiper">
+               <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="header__app">
+                            <h3 class="header__app-title">Alarm</h3>
+                            <span class="howmuchDeltes">0</span>
+                         <div class="header__app-dots hvr-grow">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="12" cy="5" r="1.8" fill="var(--imgColor)" stroke="black" stroke-width="0.4"/>
+                                 <circle cx="12" cy="12" r="1.8" fill="var(--imgColor)" stroke="black" stroke-width="0.4"/>
+                                 <circle cx="12" cy="19" r="1.8" fill="var(--imgColor)" stroke="black" stroke-width="0.4"/>
+                                 </svg>
+                                 
+                         </div>
+                     </div>
+                     <div class="body__app">
+                         <h2 class="emptyAlarm">Empty alarm</h2>
+                         <div class="modal__background"></div>
+                         <div class="alarm__blocks">   
+                              
+                             <!-- <audio id="myAudio" src="./sounds/ringtone-126505.mp3"></audio> -->
+                         </div>
+                         <div class="block__audio"></div>
+                     </div>
+                      
+                    </div>
+                    <div class="swiper-slide stopwatches">
+                        <div class="header__app">
+                            <h3 class="header__app-title">Stopwatch</h3>
+                         <div class="header__app-dots hvr-grow">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="12" cy="5" r="1.8" fill="var(--imgColor)" stroke="black" stroke-width="0.4"/>
+                                 <circle cx="12" cy="12" r="1.8" fill="var(--imgColor)" stroke="black" stroke-width="0.4"/>
+                                 <circle cx="12" cy="19" r="1.8" fill="var(--imgColor)" stroke="black" stroke-width="0.4"/>
+                                 </svg>
+                                 
+                         </div>
+                     </div>
+                     <div class="body__app">
+                        <div class="stopwatch">
+                         <div class="stopwatch__btns">
+                            <button class="stopwatch__start-stop">Start</button>
+                            <button class="stopwatch__lap">Lap</button>
+                         </div>
+                         <div class="stopwatch__lap-blocks">
+                         
+                         </div>
+                        </div>
+                     </div>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="footer__app">
+                <div class="footer__inner">
+     
+                    <nav class="footer__nav">
+                        <div class="swiper-pagination"></div>
+                        <div class="footer__img-section">
+                            <div class="footer-img">
+                                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs>
+                                        <clipPath id="clip11_413">
+                                            <rect id="fi-rr-clock" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+                                        </clipPath>
+                                    </defs>
+                                    <rect id="fi-rr-clock" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+                                    <g clip-path="url(#clip11_413)">
+                                        <path id="Vector" d="M12 0C9.62 0 7.3 0.7 5.33 2.02C3.35 3.34 1.82 5.21 0.91 7.4C0 9.6 -0.24 12.01 0.23 14.34C0.69 16.66 1.83 18.8 3.51 20.48C5.19 22.16 7.33 23.3 9.65 23.76C11.98 24.23 14.39 23.99 16.59 23.08C18.78 22.17 20.65 20.64 21.97 18.66C23.29 16.69 24 14.37 24 12C23.99 8.81 22.73 5.76 20.48 3.51C18.23 1.26 15.18 0 12 0L12 0ZM12 22C10.02 22 8.08 21.41 6.44 20.31C4.79 19.21 3.51 17.65 2.76 15.82C2 13.99 1.8 11.98 2.19 10.04C2.57 8.1 3.53 6.32 4.92 4.92C6.32 3.53 8.1 2.57 10.04 2.19C11.98 1.8 13.99 2 15.82 2.76C17.65 3.51 19.21 4.79 20.31 6.44C21.41 8.08 22 10.02 22 12C21.99 14.65 20.94 17.19 19.06 19.06C17.19 20.94 14.65 21.99 12 22Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector" d="M11.99 6C11.73 6 11.48 6.1 11.29 6.29C11.1 6.48 10.99 6.73 10.99 7L10.99 11.32L7.62 13.43C7.4 13.57 7.24 13.8 7.18 14.06C7.12 14.32 7.16 14.59 7.3 14.81C7.45 15.04 7.67 15.2 7.93 15.26C8.19 15.32 8.46 15.27 8.69 15.13L12.53 12.73C12.67 12.64 12.79 12.51 12.87 12.36C12.95 12.21 13 12.05 12.99 11.87L12.99 7C12.99 6.73 12.89 6.48 12.7 6.29C12.51 6.1 12.26 6 11.99 6Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </g>
+                                </svg>
+                                
+                            </div>
+                            <h2 class="footer__title-section">Clock</h2>
+                        </div>
+                    </nav>
+                    
+                    <button class="footer__add-alarm hvr-round-corners">
+                        <div class="footer__plus-img">
+                            <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                    Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <rect id="Rectangle 9" x="9.000000" rx="1.000000" width="2.000000" height="20.000000" fill="#34344A" fill-opacity="1.000000"/>
+                            <rect id="Rectangle 10" x="20.000000" y="9.000000" rx="1.000000" width="2.000000" height="20.000000" transform="rotate(90 20.000000 9.000000)" fill="#34344A" fill-opacity="1.000000"/>
+                        </svg>
+                        </div>
+                    </button>
+                    <nav class="footer__nav">
+                        <div class="footer__img-section">
+                            <div class="footer-img">
+                                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                            Created with Pixso.
+                                    </desc>
+                                    <defs>
+                                        <clipPath id="clip11_418">
+                                            <rect id="fi-rr-hourglass" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+                                        </clipPath>
+                                    </defs>
+                                    <rect id="fi-rr-hourglass" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+                                    <g clip-path="url(#clip11_418)">
+                                        <path id="Vector" d="M17 24L7 24C6.42 23.99 5.85 23.87 5.32 23.63C4.8 23.39 4.33 23.03 3.96 22.6C3.58 22.17 3.31 21.66 3.15 21.12C2.99 20.57 2.96 20 3.04 19.44C3.58 16.51 5.14 13.87 7.44 12C5.14 10.12 3.58 7.48 3.04 4.55C2.96 3.99 3 3.42 3.15 2.87C3.31 2.33 3.58 1.82 3.96 1.4C4.33 0.96 4.8 0.6 5.32 0.36C5.85 0.12 6.42 0 7 0L17 0C17.57 0 18.14 0.12 18.67 0.36C19.2 0.6 19.66 0.96 20.04 1.4C20.41 1.82 20.68 2.33 20.84 2.87C21 3.42 21.04 3.99 20.96 4.55C20.42 7.48 18.85 10.11 16.55 12C18.85 13.88 20.41 16.52 20.95 19.44C21.04 20 21 20.58 20.84 21.12C20.68 21.67 20.41 22.17 20.03 22.6C19.66 23.04 19.19 23.39 18.67 23.63C18.14 23.87 17.57 23.99 17 24ZM17 2L7 2C6.71 1.99 6.42 2.06 6.16 2.18C5.9 2.3 5.66 2.48 5.47 2.69C5.29 2.91 5.15 3.15 5.07 3.42C4.99 3.69 4.97 3.97 5.02 4.25C5.39 6.75 6.94 9.09 9.62 11.21C9.74 11.3 9.83 11.42 9.9 11.56C9.96 11.69 10 11.84 10 11.99C10 12.14 9.96 12.29 9.9 12.43C9.83 12.56 9.74 12.68 9.62 12.78C6.94 14.9 5.4 17.24 5.02 19.74C4.97 20.01 4.99 20.3 5.07 20.57C5.15 20.84 5.29 21.08 5.47 21.3C5.66 21.51 5.9 21.69 6.16 21.81C6.42 21.93 6.71 22 7 22L17 22C17.29 22 17.57 21.93 17.84 21.81C18.1 21.69 18.33 21.51 18.52 21.3C18.71 21.09 18.84 20.84 18.92 20.57C19 20.3 19.02 20.02 18.98 19.74C18.61 17.25 17.06 14.91 14.38 12.78C14.26 12.69 14.17 12.57 14.1 12.43C14.04 12.3 14 12.15 14 12C14 11.85 14.04 11.7 14.1 11.56C14.17 11.43 14.26 11.31 14.38 11.22C17.06 9.08 18.61 6.74 18.98 4.25C19.02 3.97 19 3.69 18.92 3.42C18.84 3.15 18.7 2.9 18.52 2.69C18.33 2.48 18.1 2.3 17.83 2.18C17.57 2.06 17.28 2 17 2Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </g>
+                                </svg>
+                                
+                            </div>
+                            <h2 class="footer__title-section">Timer</h2>
+                        </div>
+                       
+                    </nav>
+
+                </div>
+            </div> 
+        </div>
+   </div>
+
+
+<script  src="./jsMin/createElement.min.js"></script>
+<script  type="module" src="./jsMin/alarm.min.js"></script>
+<script  type="module" src="./jsMin/modal.min.js"></script>
+<script src="./jsMin/stopwatch.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./jsMin/swiper.min.js"></script>
+
+
+</body>
+</html>
